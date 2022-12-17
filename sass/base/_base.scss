@@ -1,10 +1,10 @@
 /* == BASIC PAGE STYLES == */ 
 
 body {
-//   font-family: $mainFont;
-//   color: $mainColor;
-//   background-color: $reverseColor;
+  font-family: $mainFont;
+  color: $mainTextColor;
+  background-color: $mainBgColor;
 
-  // Page content is not shown on screens with width less than 320px
+  // Page content is not shown on screens with width less than 480px
   @include less-then-mobile(display, none);
 }

@@ -14,6 +14,11 @@
 }
 
 /* == BASIC PAGE STYLES == */
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #303030;
+  background-color: #E5E5E5;
+}
 @media screen and (max-width: 479px) {
   body {
     display: none;

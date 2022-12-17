@@ -15,14 +15,23 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
       <!-- === Page navigation === -->
+
       <nav class="page-nav">
         <!-- Logo -->
-        <a href="" class="logo">logo</a>
+
+        <a href="" class="logo">
+          <svg width="68.93" height="55.46">
+            <use href="./img/icons/symbol-defs.svg#icon-logo"></use>
+          </svg>
+        </a>
+
         <!-- Page menu -->
+
         <ul>
           <li><a href="">About</a></li>
           <li><a href="">Services and prices</a></li>
@@ -30,10 +39,22 @@
           <li><a href="">Contacts</a></li>
         </ul>
       </nav>
+
       <!-- Contact -->
+
       <a href="tel:+380441111111">+38 044 111 11 11</a>
+
       <!-- If there will be a modal window, should be replaced by button -->
+
       <a href="">online-booking</a>
+
+      <!-- Mobile menu open button -->
+
+      <button class="btn menu-toggle" type="button">
+        <svg width="40" height="40">
+          <use href="./img/icons/symbol-defs.svg#icon-menu-open"></use>
+        </svg>
+      </button>
     </header>
     <main class="page">
       <!-- === HERO === -->
