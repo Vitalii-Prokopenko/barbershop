@@ -1,0 +1,53 @@
+// Mixin for styles for mobile phone
+
+@mixin only-mobile($property, $value) {
+  @media screen and (min-width: $minMobile) and (max-width: calc($minTablet - 1px)) {
+    #{$property}: $value;
+  }
+}
+
+// Mixin for styles for tablet
+
+@mixin only-tablet($property, $value) {
+  @media screen and (min-width: $minTablet) and (max-width: calc($minDesktop - 1px)) {
+     #{$property}: $value;
+  }
+}
+
+// Mixin for styles for desktop
+
+@mixin only-desktop($property, $value) {
+  @media screen and (min-width: $minDesktop) {
+     #{$property}: $value;
+  }
+}
+
+// Mixin for common styles for mobile phone and tablet
+
+@mixin mobile-and-tablet($property, $value) {
+  @media screen and (min-width: $minMobile) and (max-width: calc($minDesktop - 1px)) {
+     #{$property}: $value;
+  }
+}
+
+// Mixin for common styles for tablet and desktop
+
+@mixin tablet-and-desktop($property, $value) {
+  @media screen and (min-width: $minTablet) {
+     #{$property}: $value;
+  }
+}
+
+// Mixin for styles for screens less than mobile phone
+
+@mixin less-then-mobile($property, $value) {
+  @media screen and (max-width: calc($minMobile - 1px)) {
+     #{$property}: $value;
+  }
+}
+
+// Mixin for button border styles
+
+@mixin button-border($btnBorderColor) {
+  border: 1px solid $btnBorderColor;
+}
