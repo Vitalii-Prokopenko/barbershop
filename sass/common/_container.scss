@@ -1,24 +1,30 @@
 .container {
   margin: 0 auto;
-  padding: 0;
 
-@include only-mobile {
-  & {
-    width: $minMobile;
+  // width = 480px
+  @include only-mobile {
+    & {
+      padding: 0 31px;
+
+      width: $minMobile;
+    }
+  }
+
+  // width = 768px
+  @include only-tablet {
+    & {
+      padding: 0 39px;
+
+      width: $minTablet;
+    }
+  }
+
+  // width = 1170px
+  @include only-desktop {
+    & {
+      padding: 0 215px;
+
+      width: $minDesktop;
+    }
   }
 }
-
-@include only-tablet {
-  & {
-    width: $minTablet;
-  }
-}
-
-@include only-desktop {
-  & {
-    width: $minDesktop;
-  }
-}
-}
-
-

@@ -68,17 +68,15 @@
   }
 }
 
-// Font properties for interactive text elements (under hover and focus color and scale, if needed, are changed)
+// Font properties for interactive text elements (under hover and focus color is changed)
 @mixin interactive-fonts(
   $myColor: false,
   $myHoverFocusColor: false,
   $mySize: false,
   $myLineHeight: false,
-  $myWeight: false,
-  $myHoverFocusScale: false
+  $myWeight: false
 ) {
   transition: $myColorTransition;
-  transition: $myTransformTransition;
 
   @if $myColor {
     color: $myColor;
@@ -98,20 +96,13 @@
   @if $myLineHeight {
     line-height: calc($myLineHeight / $mySize);
   }
-  @if $myHoverFocusScale {
-    &:hover,
-    &:focus {
-      transform: scale($myHoverFocusScale);
-    }
-  }
 }
 
 // Borders
 @mixin myBorder($myPlace, $myColor, $myWidth) {
   @if $myPlace == 'all' {
     border: $myWidth solid $myColor;
-  } 
-  @else {
+  } @else {
     border-#{$myPlace}: $myWidth solid $myColor;
   }
 }
