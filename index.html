@@ -19,42 +19,44 @@
   </head>
   <body>
     <header class="header">
-      <!-- === Page navigation === -->
+      <div class="container">
+        <!-- === Page navigation === -->
 
-      <nav class="page-nav">
-        <!-- Logo -->
+        <nav class="nav">
+          <!-- Logo -->
 
-        <a href="" class="logo">
-          <svg width="68.93" height="55.46">
-            <use href="./img/icons/symbol-defs.svg#icon-logo"></use>
+          <a href="" class="logo">
+            <svg width="68.93" height="55.46">
+              <use href="./img/icons/symbol-defs.svg#icon-logo"></use>
+            </svg>
+          </a>
+
+          <!-- Page menu -->
+
+          <ul class="list menu">
+            <li class="menu__item"><a class="link menu__link" href="">About</a></li>
+            <li class="menu__item"><a class="link menu__link" href="">Services and prices</a></li>
+            <li class="menu__item"><a class="link menu__link" href="">Barbers</a></li>
+            <li class="menu__item"><a class="link menu__link" href="">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <!-- Contact -->
+
+        <a class="link contact" href="tel:+380441111111">+38 044 111 11 11</a>
+
+        <!-- If there will be a modal window, should be replaced by button -->
+
+        <a class="link button-style-link" href="">online-booking</a>
+
+        <!-- Mobile menu open button -->
+
+        <button class="btn menu-toggle" type="button">
+          <svg width="40" height="40">
+            <use href="./img/icons/symbol-defs.svg#icon-menu-open"></use>
           </svg>
-        </a>
-
-        <!-- Page menu -->
-
-        <ul>
-          <li><a href="">About</a></li>
-          <li><a href="">Services and prices</a></li>
-          <li><a href="">Barbers</a></li>
-          <li><a href="">Contacts</a></li>
-        </ul>
-      </nav>
-
-      <!-- Contact -->
-
-      <a href="tel:+380441111111">+38 044 111 11 11</a>
-
-      <!-- If there will be a modal window, should be replaced by button -->
-
-      <a href="">online-booking</a>
-
-      <!-- Mobile menu open button -->
-
-      <button class="btn menu-toggle" type="button">
-        <svg width="40" height="40">
-          <use href="./img/icons/symbol-defs.svg#icon-menu-open"></use>
-        </svg>
-      </button>
+        </button>
+      </div>
     </header>
     <main class="page">
       <!-- === HERO === -->

@@ -1,0 +1,24 @@
+.container {
+  margin: 0 auto;
+  padding: 0;
+
+@include only-mobile {
+  & {
+    width: $minMobile;
+  }
+}
+
+@include only-tablet {
+  & {
+    width: $minTablet;
+  }
+}
+
+@include only-desktop {
+  & {
+    width: $minDesktop;
+  }
+}
+}
+
+
