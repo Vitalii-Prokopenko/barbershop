@@ -46,6 +46,14 @@
   }
 }
 
+// Mixin for styles for screens less than mobile phone
+
+@mixin less-then-tablet {
+  @media screen and (max-width: calc($minTablet - 1px)) {
+    @content;
+  }
+}
+
 // Mixin for transitions
 
 @mixin myTransition($property) {

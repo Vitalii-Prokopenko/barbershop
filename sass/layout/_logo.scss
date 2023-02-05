@@ -1,0 +1,10 @@
+/* === LOGO === */
+.logo-icon {        
+     display: inline-block;
+
+     fill: $mainLightTextColor;
+
+     @include tablet-and-desktop {
+        fill: $mainTextColor;
+     }
+}

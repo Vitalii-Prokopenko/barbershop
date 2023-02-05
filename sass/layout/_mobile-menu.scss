@@ -1,3 +1,23 @@
 /* === MOBILE MENU === */
 
 /* Open button for mobile menu */
+.menu-toggle {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  fill: $mainLightTextColor;
+
+  @include tablet-and-desktop {
+    display: none;
+  }
+
+  &__icon {
+    @include myTransition(fill);
+  }
+
+  &:hover &__icon {
+    fill: $accentColor;
+  }
+}

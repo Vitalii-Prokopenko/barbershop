@@ -25,16 +25,15 @@ $mobileMenuBgColor: #FFFFFF;
 // Breakpoints
 $minMobile: 480px;
 $minTablet: 768px;
-$minDesktop: 1200px;
+$minDesktop: 1600px;
 
 // Transitions
 $transitionFunction: cubic-bezier(0.4, 0, 0.2, 1);
-$transitionTime: 1000ms;
+$transitionTime: 500ms;
 
-$myColorTransition: color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-$myBgColorTransition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-$myFillTransition: fill 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-$myTransformTransition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+// $myColorTransition: color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+// $myBgColorTransition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+// $myFillTransition: fill 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+// $myTransformTransition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 
 // Other variables
-$myHeaderTopBottomPadding: 40px;

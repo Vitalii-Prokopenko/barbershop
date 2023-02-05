@@ -5,85 +5,319 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BarberShop</title>
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
+    <!-- Modern-normalize -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
+    <!-- Swiper styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- Custom styles -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="container header-container">
-        <!-- === Page navigation === -->
-
-        <nav class="nav">
+    <!-- ==== HEADER + HERO === -->
+    <section class="header-and-hero">
+      <div class="container header-and-hero__container">
+        <aside class="header-and-hero__sidebar">
           <!-- Logo -->
-
           <a href="" class="logo">
-            <svg width="68.93" height="55.46">
-              <use href="./img/icons/symbol-defs.svg#icon-logo"></use>
+            <svg class="logo-icon" width="68.93" height="55.46">
+              <use href="./img/icons/icons.svg#icon-logo"></use>
             </svg>
           </a>
-
-          <!-- Page menu -->
-
-          <ul class="list header__menu-list">
-            <li class="header__menu-item"><a class="link header__menu-link" href="">About</a></li>
-            <li class="header__menu-item">
-              <a class="link header__menu-link" href="">Services and prices</a>
+          <!-- Social links -->
+          <ul class="list social-links__list">
+            <li class="social-links__item">
+              <a class="link social-links__link" href="">Instagram</a>
             </li>
-            <li class="header__menu-item"><a class="link header__menu-link" href="">Barbers</a></li>
-            <li class="header__menu-item">
-              <a class="link header__menu-link" href="">Contacts</a>
+            <li class="social-links__item">
+              <a class="link social-links__link" href="">Youtube</a>
             </li>
           </ul>
-        </nav>
+        </aside>
+        <!-- === HEADER === -->
+        <section class="header-and-hero__header header">
+          <!-- Page navigation -->
+          <nav class="header__nav">
+            <!-- Page menu -->
+            <ul class="list header__menu-list">
+              <li class="header__menu-item">
+                <a class="link header__menu-link" href="">About</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="link header__menu-link" href="">Services and prices</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="link header__menu-link" href="">Barbers</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="link header__menu-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__wrap">
+            <!-- Contact -->
+            <a class="link contact header__contact" href="tel:+380441111111">+38 044 111 11 11</a>
+            <!-- Link with button styles for online-booking -->
+            <a class="link btn-style-link header__booking" href="">online-booking</a>
+          </div>
+          <!-- Mobile menu open button -->
+          <button
+            class="btn menu-toggle header__menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="menu-toggle__icon" width="40" height="40" aria-label="Mobile menu button">
+              <use href="./img/icons/icons.svg#icon-menu-open"></use>
+            </svg>
+          </button>
+        </section>
+        <!-- === HERO === -->
+        <section class="header-and-hero__hero hero">
+          <!-- Text -->
+          <p class="hero__subtitle">A hair salon for men in Kyiv</p>
+          <h1 class="hero__title">BarberShop</h1>
+          <p class="hero__text">
+            We are experts in trendy men’s haircuts. We work quickly, carefully and with style.
+          </p>
+        </section>
+        <!-- Swiper -->
+        <!-- Slider main container -->
+        <div class="swiper header-and-hero__slider-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper header-and-hero__wrapper">
+            <!-- Slides -->
+            <!-- Slide 1 -->
+            <div class="swiper-slide header-and-hero__swiper-slide">
+              <picture class="header-and-hero__picture">
+                <!-- Desktop -->
+                    <source
+                      media="(min-width: 1600px)"
+                      srcset="img/desktop/webp/2140/slider1@2x-2140.webp 2140w"
+                      sizes="(min-width: 1600px) 1070px, 100vw"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1600px)"
+                      srcset="img/desktop/jpg/2140/slider1@2x-2140.jpg 2140w"
+                      sizes="(min-width: 1600px) 1070px, 100vw"
+                      type="image/jpeg"
+                    />
+                    <source
+                      media="(min-width: 1600px)"
+                      srcset="img/desktop/jpg/1070/slider1-1070.jpg 1070w"
+                      sizes="(min-width: 1600px) 1070px, 100vw"
+                      type="image/jpeg"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="img/tablet/webp/1140/slider1@2x-1140.webp 1140w"
+                      sizes="(min-width: 768px) 570px, 100vw"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="img/tablet/jpg/1140/slider1@2x-1140.jpg 1140w"
+                      sizes="(min-width: 768px) 570px, 100vw"
+                      type="image/jpeg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="img/tablet/jpg/570/slider1-570.jpg 570w"
+                      sizes="(min-width: 768px) 570px, 100vw"
+                      type="image/jpeg"
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="img/mobile/webp/960/slider1@2x-960.webp 960w"
+                      sizes="(min-width: 480px) 480px, 100vw"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="img/mobile/jpg/960/slider1@2x-960.jpg 960w"
+                      sizes="(min-width: 480px) 480px, 100vw"
+                      type="image/jpeg"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="img/mobile/jpg/480/slider1-480.jpg 480w"
+                      sizes="(min-width: 480px) 480px, 100vw"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="header-and-hero__img"
+                      src="img/mobile/jpg/480/slider1-480.jpg"
+                      alt="barber is working"
+                      width="480"
+                      height="580"
+                    />
+                  </picture>
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide header-and-hero__swiper-slide">
+              <picture class="header-and-hero__picture">
+                <!-- Desktop -->
+                    <source
+                      media="(min-width: 1600px)"
+                      srcset="img/desktop/webp/2140/slider2@2x-2140.webp 2140w"
+                      sizes="(min-width: 1600px) 1070px, 100vw"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1600px)"
+                      srcset="img/desktop/jpg/2140/slider2@2x-2140.jpg 2140w"
+                      sizes="(min-width: 1600px) 1070px, 100vw"
+                      type="image/jpeg"
+                    />
+                    <source
+                      media="(min-width: 1600px)"
+                      srcset="img/desktop/jpg/1070/slider2-1070.jpg 1070w"
+                      sizes="(min-width: 1600px) 1070px, 100vw"
+                      type="image/jpeg"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="img/tablet/webp/1140/slider2@2x-1140.webp 1140w"
+                      sizes="(min-width: 768px) 570px, 100vw"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="img/tablet/jpg/1140/slider2@2x-1140.jpg 1140w"
+                      sizes="(min-width: 768px) 570px, 100vw"
+                      type="image/jpeg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="img/tablet/jpg/570/slider2-570.jpg 570w"
+                      sizes="(min-width: 768px) 570px, 100vw"
+                      type="image/jpeg"
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="img/mobile/webp/960/slider2@2x-960.webp 960w"
+                      sizes="(min-width: 480px) 480px, 100vw"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="img/mobile/jpg/960/slider2@2x-960.jpg 960w"
+                      sizes="(min-width: 480px) 480px, 100vw"
+                      type="image/jpeg"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="img/mobile/jpg/480/slider2-480.jpg 480w"
+                      sizes="(min-width: 480px) 480px, 100vw"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="header-and-hero__img"
+                      src="img/mobile/jpg/480/slider2-480.jpg"
+                      alt="barber is working"
+                      width="480"
+                      height="580"
+                    />
+                  </picture>
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide header-and-hero__swiper-slide">
+              <picture class="header-and-hero__picture">
+                <!-- Desktop -->
+                    <source
+                      media="(min-width: 1600px)"
+                      srcset="img/desktop/webp/2140/slider3@2x-2140.webp 2140w"
+                      sizes="(min-width: 1600px) 1070px, 100vw"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1600px)"
+                      srcset="img/desktop/jpg/2140/slider3@2x-2140.jpg 2140w"
+                      sizes="(min-width: 1600px) 1070px, 100vw"
+                      type="image/jpeg"
+                    />
+                    <source
+                      media="(min-width: 1600px)"
+                      srcset="img/desktop/jpg/1070/slider3-1070.jpg 1070w"
+                      sizes="(min-width: 1600px) 1070px, 100vw"
+                      type="image/jpeg"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="img/tablet/webp/1140/slider3@2x-1140.webp 1140w"
+                      sizes="(min-width: 768px) 570px, 100vw"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="img/tablet/jpg/1140/slider3@2x-1140.jpg 1140w"
+                      sizes="(min-width: 768px) 570px, 100vw"
+                      type="image/jpeg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="img/tablet/jpg/570/slider3-570.jpg 570w"
+                      sizes="(min-width: 768px) 570px, 100vw"
+                      type="image/jpeg"
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="img/mobile/webp/960/slider3@2x-960.webp 960w"
+                      sizes="(min-width: 480px) 480px, 100vw"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="img/mobile/jpg/960/slider3@2x-960.jpg 960w"
+                      sizes="(min-width: 480px) 480px, 100vw"
+                      type="image/jpeg"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="img/mobile/jpg/480/slider3-480.jpg 480w"
+                      sizes="(min-width: 480px) 480px, 100vw"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="header-and-hero__img"
+                      src="img/mobile/jpg/480/slider3-480.jpg"
+                      alt="barber is working"
+                      width="480"
+                      height="580"
+                    />
+                  </picture>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
 
-        <!-- Contact -->
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev">Back</div>
+          <div class="swiper-button-next">Forward</div>
 
-        <a class="link contact header__contact" href="tel:+380441111111">+38 044 111 11 11</a>
-
-        <!-- Link with button styles for online-booking -->
-        <!-- !!! If there will be a modal window, should be replaced by button !!! -->
-
-        <a class="link btn-style-link header__booking" href="">online-booking</a>
-
-        <!-- Mobile menu open button -->
-
-        <button
-          class="btn menu-toggle"
-          type="button"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg width="40" height="40" aria-label="Mobile menu button">
-            <use href="./img/icons/symbol-defs.svg#icon-menu-open"></use>
-          </svg>
-        </button>
+          <!-- If we need scrollbar -->
+          <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
       </div>
-    </header>
-    
+    </section>
+
     <main class="page">
-      <!-- === HERO === -->
-
-      <section class="hero">
-        <!-- Social links -->
-        <ul>
-          <li><a href="">Instagram</a></li>
-          <li><a href="">Youtube</a></li>
-        </ul>
-        <!-- Text -->
-        <p>A hair salon for men in Kyiv</p>
-        <h1>BarberShop</h1>
-        <p>We are experts in trendy men’s haircuts. We work quickly, carefully and with style.</p>
-      </section>
-
       <!-- === ABOUT US === -->
 
       <section class="about">
@@ -364,13 +598,12 @@
 
     <div class="menu-container mobile-menu">
       <!-- Mobile menu open button -->
-      
-        <button class="btn menu-toggle" type="button">
-          <svg width="40" height="40" aria-label="Mobile menu button">
-            <use href="./img/icons/symbol-defs.svg#icon-menu-close"></use>
-          </svg>
-        </button>
-      
+
+      <button class="btn menu-toggle" type="button">
+        <svg width="40" height="40" aria-label="Mobile menu button">
+          <use href="./img/icons/symbol-defs.svg#icon-menu-close"></use>
+        </svg>
+      </button>
 
       <!-- Mobile menu -->
 
@@ -408,5 +641,9 @@
         <li><a href="">Youtube</a></li>
       </ul>
     </footer>
+    <!-- Swiper script for hero slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Initialize Hero Swiper -->
+    <script type="text/javascript" src="js/swiper.js"></script>
   </body>
 </html>

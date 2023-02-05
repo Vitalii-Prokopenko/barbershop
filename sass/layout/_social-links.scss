@@ -1,0 +1,37 @@
+/* === BARBER SHOP SOCIAL LINKS === */
+.social-links {
+  &__list {
+    display: flex;
+    align-items: center;
+
+    transform: rotate(-90deg) translateX(126px);
+
+    &::before {
+      margin-right: 40px;
+
+      content: '';
+      width: 60px;
+      height: 1px;
+      background-color: $mainTextColor;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  &__link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15 / 11);
+    letter-spacing: 0.2em;
+
+    color: $mainTextColor;
+    @include myTransition(color);
+
+    &:hover,
+    &:focus {
+        color: $accentColor;
+    }
+  }
+}
