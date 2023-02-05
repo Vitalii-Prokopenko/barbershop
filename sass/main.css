@@ -1,0 +1,106 @@
+/* Visually hidden elements */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* == BASIC PAGE STYLES == */
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #303030;
+  background-color: #E5E5E5;
+}
+@media screen and (max-width: 479px) {
+  body {
+    display: none;
+  }
+}
+
+/* == GLOBAL STYLES RESET == */
+/* headings and paragraphs */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* ul */
+.list {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+/* button */
+.btn {
+  cursor: pointer;
+}
+
+/* responsive images */
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* a */
+.link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    padding: 0 31px;
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    padding: 0 39px;
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    padding: 0 215px;
+    width: 1200px;
+  }
+}
+
+/* === HEADER === */
+.header {
+  padding: 40px 0;
+  outline: 1px solid green;
+  /* Non-displayed elements of header on mobile devices */
+}
+.header-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .header__menu-list, .header__contact, .header__booking {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */

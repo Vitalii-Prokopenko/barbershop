@@ -1,0 +1,114 @@
+// Mixin for styles for mobile phone
+
+@mixin only-mobile {
+  @media screen and (min-width: $minMobile) and (max-width: calc($minTablet - 1px)) {
+    @content;
+  }
+}
+
+// Mixin for styles for tablet
+
+@mixin only-tablet {
+  @media screen and (min-width: $minTablet) and (max-width: calc($minDesktop - 1px)) {
+    @content;
+  }
+}
+
+// Mixin for styles for desktop
+
+@mixin only-desktop {
+  @media screen and (min-width: $minDesktop) {
+    @content;
+  }
+}
+
+// Mixin for common styles for mobile phone and tablet
+
+@mixin mobile-and-tablet {
+  @media screen and (min-width: $minMobile) and (max-width: calc($minDesktop - 1px)) {
+    @content;
+  }
+}
+
+// Mixin for common styles for tablet and desktop
+
+@mixin tablet-and-desktop {
+  @media screen and (min-width: $minTablet) {
+    @content;
+  }
+}
+
+// Mixin for styles for screens less than mobile phone
+
+@mixin less-then-mobile {
+  @media screen and (max-width: calc($minMobile - 1px)) {
+    @content;
+  }
+}
+
+// Mixin for transitions
+
+@mixin myTransition($property) {
+  transition: $property $transitionTime $transitionFunction;
+}
+
+// Mixin for button border styles
+
+// @mixin button-border($btnBorderColor) {
+//   border: 1px solid $btnBorderColor;
+// }
+
+// Font properties for non-interactive text elements
+// @mixin fonts($myColor: false, $mySize: false, $myLineHeight: false, $myWeight: false) {
+//   @if $myColor {
+//     color: $myColor;
+//   }
+//   @if $mySize {
+//     font-size: $mySize;
+//   }
+//   @if $myLineHeight {
+//     line-height: calc($myLineHeight / $mySize);
+//   }
+//   @if $myWeight {
+//     font-weight: $myWeight;
+//   }
+// }
+
+// Font properties for interactive text elements (under hover and focus color is changed)
+// @mixin interactive-fonts(
+//   $myColor: false,
+//   $myHoverFocusColor: false,
+//   $mySize: false,
+//   $myLineHeight: false,
+//   $myWeight: false
+// ) {
+//   transition: $myColorTransition;
+
+//   @if $myColor {
+//     color: $myColor;
+//   }
+//   @if $myHoverFocusColor {
+//     &:hover,
+//     &:focus {
+//       color: $myHoverFocusColor;
+//     }
+//   }
+//   @if $mySize {
+//     font-size: $mySize;
+//   }
+//   @if $myWeight {
+//     font-weight: $myWeight;
+//   }
+//   @if $myLineHeight {
+//     line-height: calc($myLineHeight / $mySize);
+//   }
+// }
+
+// Borders
+// @mixin myBorder($myPlace, $myColor, $myWidth) {
+//   @if $myPlace == 'all' {
+//     border: $myWidth solid $myColor;
+//   } @else {
+//     border-#{$myPlace}: $myWidth solid $myColor;
+//   }
+// }
