@@ -5,21 +5,19 @@
   outline: 1px solid green;
 
   &-container {
-position:relative;
+    position: relative;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-/* Non-displayed elements of header on mobile devices */
-@include only-mobile {
-  &__menu-list,
-  &__contact,
-  &__booking {
-    display: none;
+  /* Non-displayed elements of header on mobile devices */
+  @include only-mobile {
+    &__menu-list,
+    &__contact,
+    &__booking {
+      display: none;
+    }
   }
-}
-
-  
 }

@@ -39,7 +39,9 @@
               <a class="link header__menu-link" href="">Services and prices</a>
             </li>
             <li class="header__menu-item"><a class="link header__menu-link" href="">Barbers</a></li>
-            <li class="header__menu-item"><a class="link header__menu-link" href="">Contacts</a></li>
+            <li class="header__menu-item">
+              <a class="link header__menu-link" href="">Contacts</a>
+            </li>
           </ul>
         </nav>
 
@@ -64,47 +66,9 @@
             <use href="./img/icons/symbol-defs.svg#icon-menu-open"></use>
           </svg>
         </button>
-
-        <!-- Mobile menu -->
-
-        <div class="menu-container mobile-menu">
-          <!-- Mobile menu open button -->
-
-          <div class="toggle-wrap">
-            <button class="btn menu-toggle" type="button">
-              <svg width="40" height="40" aria-label="Mobile menu button">
-                <use href="./img/icons/symbol-defs.svg#icon-menu-close"></use>
-              </svg>
-            </button>
-          </div>
-
-          <!-- Mobile menu -->
-
-          <ul class="list mobile-menu__list">
-            <li class="mobile-menu__item"><a class="link mobile-menu__link" href="">About</a></li>
-            <li class="mobile-menu__item"><a class="link mobile-menu__link" href="">Services and prices</a></li>
-            <li class="mobile-menu__item"><a class="link mobile-menu__link" href="">Barbers</a></li>
-            <li class="mobile-menu__item"><a class="link mobile-menu__link" href="">Contacts</a></li>
-          </ul>
-
-          <!-- Contact in mobile menu -->
-
-          <a class="link mobile-menu__contact" href="tel:+380441111111">+38 044 111 11 11</a>
-
-          <!-- Link with button styles for online-booking -->
-          <!-- !!! If there will be a modal window, should be replaced by button !!! -->
-
-          <a class="link btn-style-link mobile-menu__booking" href="">online-booking</a>
-
-          <!-- Social links -->
-
-          <ul>
-            <li><a href="">Instagram</a></li>
-            <li><a href="">Youtube</a></li>
-          </ul>
-        </div>
       </div>
     </header>
+    
     <main class="page">
       <!-- === HERO === -->
 
@@ -395,6 +359,46 @@
         <p>Every day from 9:00 to 22:00</p>
       </section>
     </main>
+
+    <!-- Mobile menu -->
+
+    <div class="menu-container mobile-menu">
+      <!-- Mobile menu open button -->
+      
+        <button class="btn menu-toggle" type="button">
+          <svg width="40" height="40" aria-label="Mobile menu button">
+            <use href="./img/icons/symbol-defs.svg#icon-menu-close"></use>
+          </svg>
+        </button>
+      
+
+      <!-- Mobile menu -->
+
+      <ul class="list mobile-menu__list">
+        <li class="mobile-menu__item"><a class="link mobile-menu__link" href="">About</a></li>
+        <li class="mobile-menu__item">
+          <a class="link mobile-menu__link" href="">Services and prices</a>
+        </li>
+        <li class="mobile-menu__item"><a class="link mobile-menu__link" href="">Barbers</a></li>
+        <li class="mobile-menu__item"><a class="link mobile-menu__link" href="">Contacts</a></li>
+      </ul>
+
+      <!-- Contact in mobile menu -->
+
+      <a class="link mobile-menu__contact" href="tel:+380441111111">+38 044 111 11 11</a>
+
+      <!-- Link with button styles for online-booking -->
+      <!-- !!! If there will be a modal window, should be replaced by button !!! -->
+
+      <a class="link btn-style-link mobile-menu__booking" href="">online-booking</a>
+
+      <!-- Social links -->
+
+      <ul>
+        <li><a href="">Instagram</a></li>
+        <li><a href="">Youtube</a></li>
+      </ul>
+    </div>
 
     <!-- === FOOTER === -->
     <footer class="footer">
