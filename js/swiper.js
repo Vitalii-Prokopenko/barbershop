@@ -8,6 +8,7 @@ const swiper = new Swiper('.swiper', {
   effect: 'slide',
   grabCursor: true,
   speed: 1000,
+  
 
   autoplay: {
     delay: 4000,
