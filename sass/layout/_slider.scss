@@ -1,0 +1,80 @@
+/* === SLIDER ELEMENTS === */ 
+
+.swiper-pagination {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 10px;
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 2px;
+  background-color: $secondaryLightTextColor;
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  width: 18px;
+  height: 2px;
+  background-color: $mainLightTextColor;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  z-index: 999;
+  top: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60px;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  --swiper-navigation-size: 39px;
+  color: rgba($secondaryLightTextColor, 0.6);
+  @include myTransition(color);
+
+  @include less-then-tablet {
+    display: none;
+  }
+
+  &::after {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: rgba($secondaryLightTextColor, 0.6);
+    @include myTransition(background-color);
+  }
+
+  &:hover,
+  &:focus {
+    color: $mainLightTextColor;
+
+    &::after {
+      background-color: $mainLightTextColor;
+    }
+  }
+}
+
+.swiper-button-prev {
+  align-items: flex-start;
+  left: 906px;
+  text-align: left;
+
+  @include only-tablet {
+    left: 404px;
+  }
+}
+
+.swiper-button-next {
+  align-items: flex-end;
+  right: 20px;
+  text-align: right;
+}

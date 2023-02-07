@@ -1,6 +1,5 @@
 .container {
-  margin: 0 auto;
-  outline: 1px solid blue;
+  margin: 0 auto;  
 
   // width = 480px
   @include only-mobile {   

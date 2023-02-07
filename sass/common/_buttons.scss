@@ -1,0 +1,35 @@
+/* === BUTTON STYLED LINKS === */
+.btn-style-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 160px;
+    height: 40px;
+    border: 1px solid $accentColor;
+    border-radius: 25px;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(16 / 12);
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+
+    color: $mainLightTextColor;
+    background-color: transparent;
+    @include myTransition(background-color);
+
+    &:hover,
+    &:focus {
+      background-color: $accentColor;
+    }
+
+    &--about {
+      color: $mainTextColor;
+
+      &:hover,
+    &:focus {
+      color: $mainLightTextColor;
+    }
+    }
+}

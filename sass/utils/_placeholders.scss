@@ -1,0 +1,15 @@
+// Line element
+%line {
+  margin-right: 20px;
+
+  content: '';
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: $mainTextColor;
+}
+
+%line-position {
+  display: flex;
+  align-items: center;
+}

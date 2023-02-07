@@ -1,10 +1,20 @@
 /* === LOGO === */
-.logo-icon {        
-     display: inline-block;
+.logo {
+  z-index: 3;
+  display: inline-block;
 
-     fill: $mainLightTextColor;
+  &-icon {
+    fill: $mainLightTextColor;
 
-     @include tablet-and-desktop {
-        fill: $mainTextColor;
-     }
+    @include tablet-and-desktop {
+      fill: $mainTextColor;
+    }
+
+    @include myTransition(fill);
+  }
+
+  &:hover &-icon,
+  &:focus &-icon {
+    fill: $accentColor;
+  }
 }

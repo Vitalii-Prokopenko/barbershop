@@ -1,0 +1,83 @@
+/* === ABOUT === */
+.about {
+  &__container {
+    outline: 1px solid crimson;
+
+    display: flex;
+    gap: 30px;
+  }
+
+  &__img-wrap {
+  }
+
+  &__list {
+    @include less-then-tablet {
+      display: none;
+    }
+
+    display: flex;
+
+    @include only-tablet {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    @include only-desktop {
+      flex-direction: row;
+    }
+  }
+
+  &__title,
+  &__subtitle {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    width: 306px;
+
+    font-family: $secondaryFont;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: calc(33 / 28);
+    letter-spacing: 0.05em;
+  }
+
+  &__subtitle {
+    @extend %line-position;
+
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15 / 11);
+    text-transform: uppercase;
+
+    &::before {
+      @extend %line;
+    }
+  }
+
+  &__text:nth-child(3) {
+    margin-bottom: 20px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(26 / 16);
+    letter-spacing: 0.02em;
+    color: $secondaryTextColor;
+
+    @include only-tablet {
+      font-size: 18px;
+      line-height: calc(30 / 18);
+    }
+  }
+
+  &__text:nth-child(4) {
+    margin-bottom: 40px;
+
+    font-size: 14px;
+    line-height: calc(26 / 14);
+
+    @include only-tablet {
+      margin-bottom: 77px;
+    }
+  }
+}
