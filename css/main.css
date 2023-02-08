@@ -501,7 +501,7 @@ h6 {
 }
 @media screen and (max-width: 767px) {
   .swiper-button-prev,
-.swiper-button-next {
+  .swiper-button-next {
     display: none;
   }
 }
@@ -627,7 +627,6 @@ h6 {
 
 /* === ABOUT === */
 .about__container {
-  outline: 1px solid crimson;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -660,6 +659,20 @@ h6 {
             flex-direction: row;
   }
 }
+.about__item:not(:last-child) {
+  margin-right: 30px;
+}
+@media screen and (min-width: 1600px) {
+  .about__img {
+    width: 270px;
+    height: 445px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .about__text-wrap {
+    width: 470px;
+  }
+}
 .about__title, .about__subtitle {
   margin-bottom: 20px;
 }
@@ -670,6 +683,13 @@ h6 {
   font-size: 28px;
   line-height: 1.1785714286;
   letter-spacing: 0.05em;
+}
+@media screen and (min-width: 1600px) {
+  .about__title {
+    width: 470px;
+    font-size: 42px;
+    line-height: 1.1666666667;
+  }
 }
 .about__subtitle {
   font-weight: 600;
@@ -685,7 +705,7 @@ h6 {
   letter-spacing: 0.02em;
   color: #555555;
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) {
   .about__text:nth-child(3) {
     font-size: 18px;
     line-height: 1.6666666667;
@@ -699,5 +719,10 @@ h6 {
 @media screen and (min-width: 768px) and (max-width: 1599px) {
   .about__text:nth-child(4) {
     margin-bottom: 77px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .about__text:nth-child(4) {
+    margin-bottom: 42px;
   }
 }/*# sourceMappingURL=main.css.map */

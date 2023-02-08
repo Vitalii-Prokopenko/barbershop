@@ -1,13 +1,8 @@
 /* === ABOUT === */
 .about {
-  &__container {
-    outline: 1px solid crimson;
-
+  &__container {  
     display: flex;
     gap: 30px;
-  }
-
-  &__img-wrap {
   }
 
   &__list {
@@ -27,6 +22,23 @@
     }
   }
 
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__img {
+    @include only-desktop {
+      width: 270px;
+      height: 445px;
+    }
+  }
+
+  &__text-wrap {
+    @include only-desktop {
+      width: 470px;
+    }
+  }
+
   &__title,
   &__subtitle {
     margin-bottom: 20px;
@@ -40,6 +52,12 @@
     font-size: 28px;
     line-height: calc(33 / 28);
     letter-spacing: 0.05em;
+
+    @include only-desktop {
+      width: 470px;
+      font-size: 42px;
+      line-height: calc(49 / 42);
+    }
   }
 
   &__subtitle {
@@ -64,7 +82,7 @@
     letter-spacing: 0.02em;
     color: $secondaryTextColor;
 
-    @include only-tablet {
+    @include tablet-and-desktop {
       font-size: 18px;
       line-height: calc(30 / 18);
     }
@@ -78,6 +96,10 @@
 
     @include only-tablet {
       margin-bottom: 77px;
+    }
+
+    @include only-desktop {
+      margin-bottom: 42px;
     }
   }
 }
