@@ -1,0 +1,56 @@
+/* === BARBERS === */
+.barbers {
+  &__container {
+    padding-top: 84px;
+    padding-bottom: 84px;
+    background-color: $secondaryBgColor;
+  }
+
+  &__title {
+    margin-bottom: 44px;
+
+    @extend %section-title;
+  }
+
+  &__subtitle {
+    margin-bottom: 20px;
+
+    @extend %line-position;
+    @extend %section-subtitle;
+
+    &::before {
+      @extend %line;
+
+      background-color: $mainTextColor;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 64px;
+  }
+
+  &__name {
+    margin-bottom: 8px;
+
+    font-size: 18px;
+    line-height: calc(25 / 18);
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+
+  &__type {
+    margin-bottom: 30px;
+
+    font-size: 14px;
+    line-height: calc(19 / 14);
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: $accentColor;
+  }
+
+  
+
+  
+  
+}

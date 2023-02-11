@@ -12,7 +12,7 @@
 
     &::before {
       @extend %line;
-      margin-right: 40px;     
+      margin-right: 40px;
     }
   }
 
@@ -31,7 +31,39 @@
 
     &:hover,
     &:focus {
-        color: $accentColor;
+      color: $accentColor;
     }
+  }
+}
+
+/* === BARBER SOCIAL LINKS === */
+.barber-social-links {
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: $baseBgColor;
+  }
+
+  &__icon {
+    @include myTransition(fill);
+  }
+
+  &__link:hover &__icon,
+  &__link:focus &__icon {
+    fill: $accentColor;
   }
 }
