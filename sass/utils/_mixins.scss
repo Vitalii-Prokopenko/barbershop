@@ -60,6 +60,18 @@
   transition: $property $transitionTime $transitionFunction;
 }
 
+// Mixin for pixel-ratio-media-queries
+
+@mixin pixel-ratio-2x {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @content;
+  }
+}
+
+
+
 // Mixin for button border styles
 
 // @mixin button-border($btnBorderColor) {

@@ -8,5 +8,12 @@ body {
 }
 
 section {
-  margin-bottom: 84px;
+  @include less-then-tablet {
+ margin-bottom: 84px;
+  }
+
+  @include only-tablet {
+    margin-bottom: 100px;
+  }
+ 
 }

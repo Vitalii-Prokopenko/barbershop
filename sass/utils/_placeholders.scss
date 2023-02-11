@@ -13,3 +13,23 @@
   display: flex;
   align-items: center;
 }
+
+// Section title
+
+%section-title {
+  font-family: $secondaryFont;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+}
+
+// Section subtitle
+
+%section-subtitle {
+  font-family: $mainFont;
+font-weight: 600;
+font-size: 11px;
+line-height: calc(15 / 11);
+text-transform: uppercase;
+}

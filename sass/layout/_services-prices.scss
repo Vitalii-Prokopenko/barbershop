@@ -1,0 +1,177 @@
+/* === SERVICES AND PRICES === */
+
+.services-prices {
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 1600px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-image: url(../img/mobile/webp/480/services-480.webp);
+  @include pixel-ratio-2x {
+    background-image: url(../img/mobile/webp/960/services-@2x-960.webp);
+  }
+
+  @include only-tablet {
+    background-image: url(../img/tablet/webp/768/services-768.webp);
+    @include pixel-ratio-2x {
+      background-image: url(../img/tablet/webp/1536/services-@2x-1536.webp);
+    }
+  }
+
+  @include only-desktop {
+    background-image: url(../img/desktop/webp/1600/services-1600.webp);
+    @include pixel-ratio-2x {
+      background-image: url(../img/desktop/webp/3200/services-@2x-3200.webp);
+    }
+  }
+
+  &__container {
+    padding-top: 84px;
+    padding-bottom: 84px;
+
+    @include only-tablet {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
+    @include only-desktop {
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 44px;
+
+    @extend %section-title;
+
+    @include less-then-tablet {
+      font-size: 40px;
+      line-height: calc(47 / 40);
+    }
+
+    color: $mainLightTextColor;
+  }
+
+  &__subtitle {
+    margin-bottom: 20px;
+
+    @extend %line-position;
+    @extend %section-subtitle;
+
+    color: rgba(157, 164, 189, 0.6);
+
+    &::before {
+      @extend %line;
+
+      background-color: rgba(157, 164, 189, 0.6);
+    }
+  }
+
+  &__block {
+    margin-bottom: 44px;
+
+    display: grid;
+
+    @include less-then-tablet {
+      padding: 30px 20px 30px 40px;
+    }
+
+    // For desktop screen background is colored for lists
+    @include mobile-and-tablet {
+      background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+    }
+
+    @include only-tablet {
+      padding: 32px 27px 32px 40px;
+    }
+
+    // Divided on 2 blocks on desktop screen
+    @include only-desktop {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 30px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    row-gap: 20px;
+
+    &:not(:last-child) {
+      @include mobile-and-tablet {
+        margin-bottom: 20px;
+      }
+    }
+
+    @include only-desktop {
+      padding: 30px 22px 30px 20px;
+
+      &:not(:last-child) {
+        background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+      }
+
+      &:last-child {
+        background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+      }
+    }
+  }
+
+  // The width of grid columns depends on content
+  &__item {
+    display: grid;
+    grid-template-columns: minmax(auto, 266px) minmax(88px, auto);
+    column-gap: 4px;
+
+    @include only-tablet {
+      grid-template-columns: minmax(auto, 496px) minmax(115px, auto);
+      column-gap: 12px;
+    }
+
+    @include only-desktop {
+      grid-template-columns: minmax(auto, 404px) minmax(112px, auto);
+      column-gap: 12px;
+    }
+  }
+
+  &__service,
+  &__price {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(20 / 14);
+    letter-spacing: 0.02em;
+
+    color: $secondaryLightTextColor;
+
+    @include tablet-and-desktop {
+      font-size: 18px;
+      line-height: calc(30 / 18);
+    }
+  }
+
+  &__service {
+    display: flex;
+    align-items: baseline;
+
+    &::after {
+      margin-left: 4px;
+      content: '';
+      display: block;
+      height: 1px;
+      flex-grow: 1;
+      background-color: $secondaryLightTextColor;
+
+      @include tablet-and-desktop {
+        margin-left: 12px;
+      }
+    }
+  }
+
+  &__btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
