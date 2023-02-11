@@ -25,8 +25,47 @@
     }
   }
 
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include mobile-and-tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    @include myTransition(box-shadow);
+    width: 418px;
+
+    @include only-tablet {
+      width: 450px;
+    }
+
+    @include only-desktop {
+      width: 370px;
+    }
+
+    &:hover,
+    &:focus {
+      box-shadow: 10px 10px 20px rgba($mainTextColor, 0.5);
+    }
+  }
+
   &__item:not(:last-child) {
-    margin-bottom: 64px;
+    @include mobile-and-tablet {
+      margin-bottom: 64px;
+    }
+
+    @include only-desktop {
+      margin-right: 30px;
+    }
+  }
+
+  &__img {
+    margin-bottom: 30px;
+    width: 100%;
   }
 
   &__name {
@@ -48,9 +87,4 @@
 
     color: $accentColor;
   }
-
-  
-
-  
-  
 }
