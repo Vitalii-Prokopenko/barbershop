@@ -661,6 +661,12 @@ h6 {
   display: flex;
   gap: 30px;
 }
+@media screen and (min-width: 1600px) {
+  .about__container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
 .about__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -932,12 +938,6 @@ h6 {
 }
 
 /* === WHY === */
-.why {
-  outline: 1px solid blue;
-}
-.why__container {
-  outline: 1px solid crimson;
-}
 @media screen and (min-width: 1600px) {
   .why__container {
     padding: 120px 215px;
@@ -977,7 +977,7 @@ h6 {
   letter-spacing: 0.02em;
   color: #555555;
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) {
   .why__text {
     width: 500px;
   }
@@ -999,6 +999,7 @@ h6 {
   .why__list {
     margin-left: 100px;
     margin-right: 130px;
+    width: 370px;
   }
 }
 .why__item {

@@ -3,6 +3,11 @@
   &__container {
     display: flex;
     gap: 30px;
+
+    @include only-desktop {
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
   }
 
   &__list {

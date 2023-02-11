@@ -1,10 +1,8 @@
 /* === WHY === */
 .why {
-  outline: 1px solid blue;
-
+  
   &__container {
-    outline: 1px solid crimson;
-
+   
     @include only-desktop {
       padding: 120px 215px;
       display: flex;
@@ -52,7 +50,7 @@
 
     color: $secondaryTextColor;
 
-    @include only-tablet {
+    @include tablet-and-desktop {
       width: 500px;
     }
   }
@@ -70,6 +68,7 @@
     @include only-desktop {
       margin-left: 100px;
       margin-right: 130px;
+      width: 370px;
     }
   }
 
