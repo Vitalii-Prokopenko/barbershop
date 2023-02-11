@@ -599,7 +599,7 @@
                   width="418"
                   height="346"
                 />
-              </picture>              
+              </picture>
               <p class="barbers__name">John Smith</p>
               <p class="barbers__type">Extreme Barber</p>
               <ul class="list barber-social-links__list">
@@ -634,7 +634,7 @@
               </ul>
             </li>
             <li class="barbers__item">
-               <picture class="header-and-hero__picture">
+              <picture class="header-and-hero__picture">
                 <!-- Desktop -->
                 <source
                   media="(min-width: 1600px)"
@@ -699,7 +699,7 @@
                   width="418"
                   height="346"
                 />
-              </picture>  
+              </picture>
               <p class="barbers__name">Michele Doe</p>
               <p class="barbers__type">Extreme Barber</p>
               <ul class="list barber-social-links__list">
@@ -734,7 +734,7 @@
               </ul>
             </li>
             <li class="barbers__item">
-               <picture class="header-and-hero__picture">
+              <picture class="header-and-hero__picture">
                 <!-- Desktop -->
                 <source
                   media="(min-width: 1600px)"
@@ -799,7 +799,7 @@
                   width="418"
                   height="346"
                 />
-              </picture>  
+              </picture>
               <p class="barbers__name">Alan Black</p>
               <p class="barbers__type">Extreme Barber</p>
               <ul class="list barber-social-links__list">
@@ -832,47 +832,300 @@
                   </a>
                 </li>
               </ul>
+            </li>
+          </ul>
         </div>
       </section>
+
       <!-- === PORTFOLIO === -->
+
       <section class="portfolio">
-        <p>In Latin, "barba" means "beard"</p>
-        <h2>Portfolio</h2>
-        <ul>
-          <li>
-            <img
-              src="./img/mobile/jpg/418/portfolio1-418.jpg"
-              alt="Barber makes haircut"
-              width="418"
-              height="360"
-            />
-          </li>
-          <li>
-            <img
-              src="./img/mobile/jpg/418/portfolio2-418.jpg"
-              alt="Barber applies foam to the client's face"
-              width="418"
-              height="360"
-            />
-          </li>
-          <li>
-            <img
-              src="./img/mobile/jpg/418/portfolio3-418.jpg"
-              alt="Barber puts a towel on the client's face"
-              width="418"
-              height="360"
-            />
-          </li>
-          <li>
-            <img
-              src="./img/mobile/jpg/418/portfolio4-418.jpg"
-              alt="Barber shaves the hair on the client's neck"
-              width="418"
-              height="360"
-            />
-          </li>
-        </ul>
+        <div class="container portfolio__container">
+          <p class="portfolio__subtitle">In Latin, "barba" means "beard"</p>
+          <h2 class="visually-hidden">Portfolio</h2>
+          <ul class="list portfolio__list">
+            <!-- Photo 1 -->
+            <li class="portfolio__item">
+              <picture class="portfolio__picture">
+                <!-- Desktop -->
+                <source
+                  media="(min-width: 1600px)"
+                  srcset="img/desktop/webp/540/portfolio1@2x-540.webp 540w"
+                  sizes="(min-width: 1600px) 270px, 100vw"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1600px)"
+                  srcset="img/desktop/jpg/540/portfolio1@2x-540.jpg 540w"
+                  sizes="(min-width: 1600px) 270px, 100vw"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(min-width: 1600px)"
+                  srcset="img/desktop/jpg/270/portfolio1-270.jpg 270w"
+                  sizes="(min-width: 1600px) 270px, 100vw"
+                  type="image/jpeg"
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/tablet/webp/660/portfolio1@2x-660.webp 660w"
+                  sizes="(min-width: 768px) 330px, 100vw"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/tablet/jpg/660/portfolio1@2x-660.jpg 660w"
+                  sizes="(min-width: 768px) 330px, 100vw"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/tablet/jpg/330/portfolio1-330.jpg 330w"
+                  sizes="(min-width: 768px) 330px, 100vw"
+                  type="image/jpeg"
+                />
+                <!-- Mobile -->
+                <source
+                  media="(min-width: 480px)"
+                  srcset="img/mobile/webp/836/portfolio1@2x-836.webp 836w"
+                  sizes="(min-width: 480px) 418px, 100vw"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="img/mobile/jpg/836/portfolio1@2x-836.jpg 836w"
+                  sizes="(min-width: 480px) 418px, 100vw"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="img/mobile/jpg/418/portfolio1-418.jpg 418w"
+                  sizes="(min-width: 480px) 418px, 100vw"
+                  type="image/jpeg"
+                />
+                <img
+                  class="portfolio__img"
+                  src="img/mobile/jpg/418/portfolio1-418.jpg"
+                  alt="Barber makes haircut"
+                  width="418"
+                  height="360"
+                />
+              </picture>
+            </li>
+            <!-- Photo 2 -->
+            <li class="portfolio__item">
+              <picture class="portfolio__picture">
+                <!-- Desktop -->
+                <source
+                  media="(min-width: 1600px)"
+                  srcset="img/desktop/webp/540/portfolio2@2x-540.webp 540w"
+                  sizes="(min-width: 1600px) 270px, 100vw"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1600px)"
+                  srcset="img/desktop/jpg/540/portfolio2@2x-540.jpg 540w"
+                  sizes="(min-width: 1600px) 270px, 100vw"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(min-width: 1600px)"
+                  srcset="img/desktop/jpg/270/portfolio2-270.jpg 270w"
+                  sizes="(min-width: 1600px) 270px, 100vw"
+                  type="image/jpeg"
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/tablet/webp/660/portfolio2@2x-660.webp 660w"
+                  sizes="(min-width: 768px) 330px, 100vw"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/tablet/jpg/660/portfolio2@2x-660.jpg 660w"
+                  sizes="(min-width: 768px) 330px, 100vw"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/tablet/jpg/330/portfolio2-330.jpg 330w"
+                  sizes="(min-width: 768px) 330px, 100vw"
+                  type="image/jpeg"
+                />
+                <!-- Mobile -->
+                <source
+                  media="(min-width: 480px)"
+                  srcset="img/mobile/webp/836/portfolio2@2x-836.webp 836w"
+                  sizes="(min-width: 480px) 418px, 100vw"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="img/mobile/jpg/836/portfolio2@2x-836.jpg 836w"
+                  sizes="(min-width: 480px) 418px, 100vw"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="img/mobile/jpg/418/portfolio2-418.jpg 418w"
+                  sizes="(min-width: 480px) 418px, 100vw"
+                  type="image/jpeg"
+                />
+                <img
+                  class="portfolio__img"
+                  src="img/mobile/jpg/418/portfolio2-418.jpg"
+                  alt="Barber applies foam to the client's face"
+                  width="418"
+                  height="360"
+                />
+              </picture>
+            </li>
+            <!-- Photo 3 -->
+            <li class="portfolio__item">
+              <picture class="portfolio__picture">
+                <!-- Desktop -->
+                <source
+                  media="(min-width: 1600px)"
+                  srcset="img/desktop/webp/540/portfolio3@2x-540.webp 540w"
+                  sizes="(min-width: 1600px) 270px, 100vw"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1600px)"
+                  srcset="img/desktop/jpg/540/portfolio3@2x-540.jpg 540w"
+                  sizes="(min-width: 1600px) 270px, 100vw"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(min-width: 1600px)"
+                  srcset="img/desktop/jpg/270/portfolio3-270.jpg 270w"
+                  sizes="(min-width: 1600px) 270px, 100vw"
+                  type="image/jpeg"
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/tablet/webp/660/portfolio3@2x-660.webp 660w"
+                  sizes="(min-width: 768px) 330px, 100vw"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/tablet/jpg/660/portfolio3@2x-660.jpg 660w"
+                  sizes="(min-width: 768px) 330px, 100vw"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/tablet/jpg/330/portfolio3-330.jpg 330w"
+                  sizes="(min-width: 768px) 330px, 100vw"
+                  type="image/jpeg"
+                />
+                <!-- Mobile -->
+                <source
+                  media="(min-width: 480px)"
+                  srcset="img/mobile/webp/836/portfolio3@2x-836.webp 836w"
+                  sizes="(min-width: 480px) 418px, 100vw"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="img/mobile/jpg/836/portfolio3@2x-836.jpg 836w"
+                  sizes="(min-width: 480px) 418px, 100vw"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="img/mobile/jpg/418/portfolio3-418.jpg 418w"
+                  sizes="(min-width: 480px) 418px, 100vw"
+                  type="image/jpeg"
+                />
+                <img
+                  class="portfolio__img"
+                  src="img/mobile/jpg/418/portfolio3-418.jpg"
+                  alt="Barber puts a towel on the client's face"
+                  width="418"
+                  height="360"
+                />
+              </picture>
+            </li>
+            <!-- Photo 4 -->
+            <li class="portfolio__item">
+              <picture class="portfolio__picture">
+                <!-- Desktop -->
+                <source
+                  media="(min-width: 1600px)"
+                  srcset="img/desktop/webp/540/portfolio4@2x-540.webp 540w"
+                  sizes="(min-width: 1600px) 270px, 100vw"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1600px)"
+                  srcset="img/desktop/jpg/540/portfolio4@2x-540.jpg 540w"
+                  sizes="(min-width: 1600px) 270px, 100vw"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(min-width: 1600px)"
+                  srcset="img/desktop/jpg/270/portfolio4-270.jpg 270w"
+                  sizes="(min-width: 1600px) 270px, 100vw"
+                  type="image/jpeg"
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/tablet/webp/660/portfolio4@2x-660.webp 660w"
+                  sizes="(min-width: 768px) 330px, 100vw"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/tablet/jpg/660/portfolio4@2x-660.jpg 660w"
+                  sizes="(min-width: 768px) 330px, 100vw"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/tablet/jpg/330/portfolio4-330.jpg 330w"
+                  sizes="(min-width: 768px) 330px, 100vw"
+                  type="image/jpeg"
+                />
+                <!-- Mobile -->
+                <source
+                  media="(min-width: 480px)"
+                  srcset="img/mobile/webp/836/portfolio4@2x-836.webp 836w"
+                  sizes="(min-width: 480px) 418px, 100vw"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="img/mobile/jpg/836/portfolio4@2x-836.jpg 836w"
+                  sizes="(min-width: 480px) 418px, 100vw"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="img/mobile/jpg/418/portfolio4-418.jpg 418w"
+                  sizes="(min-width: 480px) 418px, 100vw"
+                  type="image/jpeg"
+                />
+                <img
+                  class="portfolio__img"
+                  src="img/mobile/jpg/418/portfolio4-418.jpg"
+                  alt="Barber shaves the hair on the client's neck"
+                  width="418"
+                  height="360"
+                />
+              </picture>
+            </li>
+          </ul>
+        </div>
       </section>
+
+      <!-- === PORTFOLIO === -->
+
       <section class="booking">
         <h2>Online-booking</h2>
         <form action="">

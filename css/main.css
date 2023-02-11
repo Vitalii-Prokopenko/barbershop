@@ -13,7 +13,7 @@
   margin: -1px;
 }
 
-.barbers__subtitle::before, .why__subtitle::before, .services-prices__subtitle::before, .about__subtitle::before, .social-links__list::before, .hero__subtitle::before {
+.portfolio__subtitle::before, .barbers__subtitle::before, .why__subtitle::before, .services-prices__subtitle::before, .about__subtitle::before, .social-links__list::before, .hero__subtitle::before {
   margin-right: 20px;
   content: "";
   display: block;
@@ -22,7 +22,7 @@
   background-color: #303030;
 }
 
-.barbers__subtitle, .why__subtitle, .services-prices__subtitle, .about__subtitle, .hero__subtitle {
+.portfolio__subtitle, .barbers__subtitle, .why__subtitle, .services-prices__subtitle, .about__subtitle, .hero__subtitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,7 +39,7 @@
   letter-spacing: 0.05em;
 }
 
-.barbers__subtitle, .why__subtitle, .services-prices__subtitle, .about__subtitle {
+.portfolio__subtitle, .barbers__subtitle, .why__subtitle, .services-prices__subtitle, .about__subtitle {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 11px;
@@ -1181,4 +1181,65 @@ h6 {
   text-align: center;
   letter-spacing: 0.02em;
   color: #FF6C00;
+}
+
+/* === PORTFOLIO === */
+@media screen and (min-width: 1600px) {
+  .portfolio__container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+.portfolio__subtitle {
+  margin-bottom: 71px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__subtitle {
+    margin-bottom: 44px;
+  }
+}
+.portfolio__subtitle::before {
+  background-color: #303030;
+}
+.portfolio__list {
+  display: grid;
+}
+@media screen and (max-width: 767px) {
+  .portfolio__list {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .portfolio__list {
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+    row-gap: 30px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .portfolio__list {
+    grid-template-columns: repeat(4, 1fr);
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+  }
+}
+.portfolio__item {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.portfolio__img {
+  -webkit-transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+}
+.portfolio__item:hover .portfolio__img {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }/*# sourceMappingURL=main.css.map */
