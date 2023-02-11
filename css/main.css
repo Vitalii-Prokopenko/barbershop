@@ -31,7 +31,7 @@
           align-items: center;
 }
 
-.barbers__title, .why__title, .services-prices__title, .about__title {
+.booking__title, .barbers__title, .why__title, .services-prices__title, .about__title {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 42px;
@@ -1239,7 +1239,113 @@ h6 {
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 100%;
 }
-.portfolio__item:hover .portfolio__img {
+.portfolio__item:hover .portfolio__img, .portfolio__item:focus .portfolio__img {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
+}
+
+/* === BOOKING === */
+.booking {
+  background-color: #191C26;
+}
+.booking__container {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .booking__container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+.booking__title {
+  margin-bottom: 44px;
+  color: #FFFFFF;
+}
+.booking__form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 24px) 76px 40px;
+  row-gap: 44px;
+}
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .booking__form {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 24px 76px 40px;
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+  }
+}
+.booking__form-field {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.booking__form-field:nth-child(3) {
+  grid-column: 1/3;
+}
+.booking__form-input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: inherit;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  color: #FFFFFF;
+}
+.booking__form-input:last-child {
+  resize: none;
+}
+.booking__form-input::-webkit-input-placeholder {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636363636;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+}
+.booking__form-input::-moz-placeholder {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636363636;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+}
+.booking__form-input:-ms-input-placeholder {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636363636;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+}
+.booking__form-input::-ms-input-placeholder {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636363636;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+}
+.booking__form-input::placeholder {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636363636;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+}
+.booking__form-field:focus-within .booking__form-input {
+  border-bottom: 1px solid #FFFFFF;
+  outline: none;
+}
+.booking__submit {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .booking__submit {
+    margin-left: 0;
+  }
 }/*# sourceMappingURL=main.css.map */
