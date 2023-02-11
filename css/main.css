@@ -13,7 +13,7 @@
   margin: -1px;
 }
 
-.services-prices__subtitle::before, .about__subtitle::before, .social-links__list::before, .hero__subtitle::before {
+.why__subtitle::before, .services-prices__subtitle::before, .about__subtitle::before, .social-links__list::before, .hero__subtitle::before {
   margin-right: 20px;
   content: "";
   display: block;
@@ -22,7 +22,7 @@
   background-color: #303030;
 }
 
-.services-prices__subtitle, .about__subtitle, .hero__subtitle {
+.why__subtitle, .services-prices__subtitle, .about__subtitle, .hero__subtitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,7 +31,7 @@
           align-items: center;
 }
 
-.services-prices__title, .about__title {
+.why__title, .services-prices__title, .about__title {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 42px;
@@ -39,7 +39,7 @@
   letter-spacing: 0.05em;
 }
 
-.services-prices__subtitle, .about__subtitle {
+.why__subtitle, .services-prices__subtitle, .about__subtitle {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 11px;
@@ -929,4 +929,33 @@ h6 {
 .services-prices__btn {
   margin-left: auto;
   margin-right: auto;
+}
+
+/* === WHY === */
+.why {
+  outline: 1px solid blue;
+}
+.why__container {
+  outline: 1px solid crimson;
+}
+.why__title {
+  margin-bottom: 44px;
+  letter-spacing: 0.03em;
+}
+.why__title-rotate {
+  display: inline-block;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.why__subtitle {
+  margin-bottom: 20px;
+}
+.why__subtitle::before {
+  background-color: #303030;
+}
+.why__text {
+  font-size: 18px;
+  line-height: 1.6666666667;
+  letter-spacing: 0.02em;
+  color: #555555;
 }/*# sourceMappingURL=main.css.map */

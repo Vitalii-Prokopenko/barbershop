@@ -1,0 +1,41 @@
+/* === WHY === */
+.why {
+  outline: 1px solid blue;
+
+  &__container {
+    outline: 1px solid crimson;
+  }
+
+  &__title {
+    margin-bottom: 44px;
+
+    @extend %section-title;
+    letter-spacing: 0.03em;
+
+    &-rotate {
+      display: inline-block;
+      transform: rotate(180deg);
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 20px;
+
+    @extend %line-position;
+    @extend %section-subtitle;
+
+    &::before {
+      @extend %line;
+
+      background-color: $mainTextColor;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: calc(30 / 18);
+    letter-spacing: 0.02em;
+
+    color: $secondaryTextColor;
+  }
+}
