@@ -82,7 +82,7 @@
     }
 
     // For desktop screen background is colored for lists
-    @include mobile-and-tablet {
+    @include less-then-desktop {
       background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
     }
 
@@ -102,7 +102,7 @@
     row-gap: 20px;
 
     &:not(:last-child) {
-      @include mobile-and-tablet {
+      @include less-then-desktop {
         margin-bottom: 20px;
       }
     }

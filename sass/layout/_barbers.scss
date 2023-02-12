@@ -30,7 +30,7 @@
     justify-content: center;
     align-items: center;
 
-    @include mobile-and-tablet {
+    @include less-then-desktop {
       flex-direction: column;
     }
   }
@@ -38,6 +38,10 @@
   &__item {
     @include myTransition(box-shadow);
     width: 418px;
+
+    @include less-then-mobile {
+      max-width: 418px;
+    }
 
     @include only-tablet {
       width: 450px;
@@ -54,7 +58,7 @@
   }
 
   &__item:not(:last-child) {
-    @include mobile-and-tablet {
+    @include less-then-desktop {
       margin-bottom: 64px;
     }
 

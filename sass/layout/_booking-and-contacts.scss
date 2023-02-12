@@ -6,7 +6,7 @@
   &__container {
     display: flex;
 
-    @include mobile-and-tablet {
+    @include less-then-desktop {
       flex-direction: column;
     }
 

@@ -7,7 +7,7 @@
     display: grid;
 
     @include less-then-tablet {
-      grid-template-columns: 70px 348px;
+      grid-template-columns: 70px minmax(auto, 348px);
       grid-template-rows: 56px 484px;
     }
 

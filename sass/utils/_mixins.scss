@@ -46,10 +46,18 @@
   }
 }
 
-// Mixin for styles for screens less than mobile phone
+// Mixin for styles for screens less than tablet
 
 @mixin less-then-tablet {
   @media screen and (max-width: calc($minTablet - 1px)) {
+    @content;
+  }
+}
+
+// Mixin for styles for screens less than desktop
+
+@mixin less-then-desktop {
+  @media screen and (max-width: calc($minDesktop - 1px)) {
     @content;
   }
 }
