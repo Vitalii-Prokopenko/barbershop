@@ -1,0 +1,31 @@
+/* === BOOKING AND CONTACTS === */
+.booking-and-contacts {
+  background-color: $darkBgColor;
+
+  
+    
+
+&__container {
+display: flex;
+
+    @include mobile-and-tablet {
+        flex-direction: column;
+    }
+
+   @include only-desktop {
+    padding-right: 0;
+   }
+}    
+ 
+&__booking {
+  @include only-desktop {
+    width: 600px;
+  }
+}
+
+&__contacts {
+  @include only-desktop {
+    width: 785px;
+  }
+}
+}

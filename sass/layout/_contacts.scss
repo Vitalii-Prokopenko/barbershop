@@ -1,0 +1,149 @@
+/* === CONTACTS === */
+.contacts {
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 785px;
+  width: 100%;
+  //   background-color: $darkBgColor;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-image: url(../img/mobile/webp/480/contacts-mobile-480.webp);
+  @include pixel-ratio-2x {
+    background-image: url(../img/mobile/webp/960/contacts-mobile-@2x-960.webp);
+  }
+
+  @include only-tablet {
+    background-image: url(../img/tablet/webp/768/contacts-tablet-768.webp);
+    @include pixel-ratio-2x {
+      background-image: url(../img/tablet/webp/1536/contacts-tablet-@2x-1536.webp);
+    }
+  }
+
+  @include only-desktop {
+    background-image: url(../img/desktop/webp/785/contacts-desktop-785.webp);
+    @include pixel-ratio-2x {
+      background-image: url(../img/desktop/webp/1570/contacts-desktop-@2x-1570.webp);
+    }
+  }
+
+  &__container {
+    padding-top: 84px;
+    padding-bottom: 84px;
+
+    @include only-tablet {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      padding-right: 120px;
+    }
+
+    @include only-desktop {
+      padding-top: 130px;
+      padding-left: 100px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 40px;
+
+    @extend %section-title;
+    color: $mainLightTextColor;
+  }
+
+  &__wrap {
+    @include only-tablet {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__address {
+    @include less-then-tablet {
+      margin-bottom: 44px;
+    }
+
+    @include only-tablet {
+      width: 330px;
+    }
+
+    @include only-desktop {
+        margin-bottom: 70px;
+    }
+  }
+
+  &__item:nth-child(1) {
+    @include tablet-and-desktop {
+      width: 220px;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(30 / 18);
+    letter-spacing: 0.02em;
+
+    color: $secondaryLightTextColor;
+    @include myTransition(color);
+
+    &:hover,
+    &:focus {
+      color: $accentColor;
+    }
+  }
+
+  &__item:nth-child(1) &__link {
+    font-weight: 700;
+
+    @include only-tablet {
+      align-items: flex-start;
+    }
+  }
+
+  &__icon {
+    margin-right: 16px;
+    fill: transparent;
+    stroke: $secondaryLightTextColor;
+    @include myTransition(stroke);
+  }
+
+  &__link:hover &__icon,
+  &__link:focus &__icon {
+    stroke: $accentColor;
+  }
+
+  &__subtitle {
+    margin-bottom: 20px;
+
+    @extend %line-position;
+    @extend %section-subtitle;
+
+    color: $mainLightTextColor;
+
+    &::before {
+      @extend %line;
+
+      background-color: rgba(157, 164, 189, 0.4);
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: calc(30 / 18);
+    letter-spacing: 0.02em;
+
+    color: $secondaryLightTextColor;
+  }
+}

@@ -13,7 +13,7 @@
   margin: -1px;
 }
 
-.portfolio__subtitle::before, .barbers__subtitle::before, .why__subtitle::before, .services-prices__subtitle::before, .about__subtitle::before, .social-links__list::before, .hero__subtitle::before {
+.contacts__subtitle::before, .portfolio__subtitle::before, .barbers__subtitle::before, .why__subtitle::before, .services-prices__subtitle::before, .about__subtitle::before, .social-links__list::before, .hero__subtitle::before {
   margin-right: 20px;
   content: "";
   display: block;
@@ -22,7 +22,7 @@
   background-color: #303030;
 }
 
-.portfolio__subtitle, .barbers__subtitle, .why__subtitle, .services-prices__subtitle, .about__subtitle, .hero__subtitle {
+.contacts__subtitle, .portfolio__subtitle, .barbers__subtitle, .why__subtitle, .services-prices__subtitle, .about__subtitle, .hero__subtitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,7 +31,7 @@
           align-items: center;
 }
 
-.booking__title, .barbers__title, .why__title, .services-prices__title, .about__title {
+.contacts__title, .booking__title, .barbers__title, .why__title, .services-prices__title, .about__title {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 42px;
@@ -39,7 +39,7 @@
   letter-spacing: 0.05em;
 }
 
-.portfolio__subtitle, .barbers__subtitle, .why__subtitle, .services-prices__subtitle, .about__subtitle {
+.contacts__subtitle, .portfolio__subtitle, .barbers__subtitle, .why__subtitle, .services-prices__subtitle, .about__subtitle {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 11px;
@@ -103,6 +103,11 @@ h6 {
   display: block;
   text-decoration: none;
   color: inherit;
+}
+
+/* address */
+.address {
+  font-style: normal;
 }
 
 .container {
@@ -1244,10 +1249,40 @@ h6 {
           transform: scale(1.3);
 }
 
-/* === BOOKING === */
-.booking {
+/* === BOOKING AND CONTACTS === */
+.booking-and-contacts {
   background-color: #191C26;
 }
+.booking-and-contacts__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (min-width: 480px) and (max-width: 1599px) {
+  .booking-and-contacts__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .booking-and-contacts__container {
+    padding-right: 0;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .booking-and-contacts__booking {
+    width: 600px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .booking-and-contacts__contacts {
+    width: 785px;
+  }
+}
+
+/* === BOOKING === */
 .booking__container {
   padding-top: 84px;
   padding-bottom: 84px;
@@ -1256,6 +1291,12 @@ h6 {
   .booking__container {
     padding-top: 100px;
     padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .booking__container {
+    padding-top: 130px;
+    padding-right: 30px;
   }
 }
 .booking__title {
@@ -1268,7 +1309,7 @@ h6 {
   grid-template-rows: repeat(2, 24px) 76px 40px;
   row-gap: 44px;
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) {
   .booking__form {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 24px 76px 40px;
@@ -1282,8 +1323,10 @@ h6 {
   width: 100%;
   height: 100%;
 }
-.booking__form-field:nth-child(3) {
-  grid-column: 1/3;
+@media screen and (min-width: 768px) {
+  .booking__form-field:nth-child(3) {
+    grid-column: 1/3;
+  }
 }
 .booking__form-input {
   width: 100%;
@@ -1344,8 +1387,156 @@ h6 {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) {
   .booking__submit {
     margin-left: 0;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+/* === CONTACTS === */
+.contacts {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 785px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/mobile/webp/480/contacts-mobile-480.webp);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .contacts {
+    background-image: url(../img/mobile/webp/960/contacts-mobile-@2x-960.webp);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .contacts {
+    background-image: url(../img/tablet/webp/768/contacts-tablet-768.webp);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1599px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1599px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1599px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1599px) and (min-resolution: 2dppx) {
+  .contacts {
+    background-image: url(../img/tablet/webp/1536/contacts-tablet-@2x-1536.webp);
+  }
+}
+@media screen and (min-width: 1600px) {
+  .contacts {
+    background-image: url(../img/desktop/webp/785/contacts-desktop-785.webp);
+  }
+}
+@media screen and (min-width: 1600px) and (min-device-pixel-ratio: 2), screen and (min-width: 1600px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1600px) and (min-resolution: 192dpi), screen and (min-width: 1600px) and (min-resolution: 2dppx) {
+  .contacts {
+    background-image: url(../img/desktop/webp/1570/contacts-desktop-@2x-1570.webp);
+  }
+}
+.contacts__container {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .contacts__container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-right: 120px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .contacts__container {
+    padding-top: 130px;
+    padding-left: 100px;
+  }
+}
+.contacts__title {
+  margin-bottom: 40px;
+  color: #FFFFFF;
+}
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .contacts__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contacts__address {
+    margin-bottom: 44px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .contacts__address {
+    width: 330px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .contacts__address {
+    margin-bottom: 70px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts__item:nth-child(1) {
+    width: 220px;
+  }
+}
+.contacts__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.contacts__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6666666667;
+  letter-spacing: 0.02em;
+  color: #9DA4BD;
+  -webkit-transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts__link:hover, .contacts__link:focus {
+  color: #FF6C00;
+}
+.contacts__item:nth-child(1) .contacts__link {
+  font-weight: 700;
+}
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .contacts__item:nth-child(1) .contacts__link {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+.contacts__icon {
+  margin-right: 16px;
+  fill: transparent;
+  stroke: #9DA4BD;
+  -webkit-transition: stroke 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: stroke 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts__link:hover .contacts__icon, .contacts__link:focus .contacts__icon {
+  stroke: #FF6C00;
+}
+.contacts__subtitle {
+  margin-bottom: 20px;
+  color: #FFFFFF;
+}
+.contacts__subtitle::before {
+  background-color: rgba(157, 164, 189, 0.4);
+}
+.contacts__text {
+  font-size: 18px;
+  line-height: 1.6666666667;
+  letter-spacing: 0.02em;
+  color: #9DA4BD;
+}
+
+/* === FOOTER === *//*# sourceMappingURL=main.css.map */
