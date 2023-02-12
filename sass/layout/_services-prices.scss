@@ -145,6 +145,7 @@
     letter-spacing: 0.02em;
 
     color: $secondaryLightTextColor;
+    @include myTransition(color);
 
     @include tablet-and-desktop {
       font-size: 18px;
@@ -163,11 +164,21 @@
       height: 1px;
       flex-grow: 1;
       background-color: $secondaryLightTextColor;
+      @include myTransition(background-color);
 
       @include tablet-and-desktop {
         margin-left: 12px;
       }
     }
+  }
+
+  &__item:hover &__service,
+  &__item:hover &__price {
+    color: $accentColor;
+  }
+
+  &__item:hover &__service::after {
+    background-color: $accentColor;
   }
 
   &__btn {

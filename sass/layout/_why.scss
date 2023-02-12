@@ -79,6 +79,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @include myTransition(background-color);
+    @include myTransition(box-shadow);
+
+    &:hover,
+    &:focus {
+      background-color: rgba($secondaryBgColor, 0.5);
+      box-shadow: 10px 10px 20px rgba($mainTextColor, 0.5); 
+    }
 
     @include only-tablet {
       width: 210px;
