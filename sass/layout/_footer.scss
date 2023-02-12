@@ -1,1 +1,36 @@
-/* === FOOTER === */ 
+/* === FOOTER === */
+.footer {
+  &__container {
+    padding-top: 44px;
+    padding-bottom: 44px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @include tablet-and-desktop {
+      padding-top: 56px;
+      padding-bottom: 56px;
+
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+  }
+
+  &__social-links-list {
+    @include less-then-tablet {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__copyright {
+    align-self: flex-start;
+
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15 / 11);
+    letter-spacing: 0.2em;
+
+    color: $secondaryLightTextColor;
+  }
+}

@@ -36,11 +36,11 @@
 
   &__menu-item:not(:last-child) {
     @include only-tablet {
-      margin-right: 16px;
+      margin-right: 15px;
     }
 
     @include only-desktop {
-      margin-right: 30px;
+      margin-right: 28px;
     }
   }
 

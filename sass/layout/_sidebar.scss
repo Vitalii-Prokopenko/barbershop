@@ -1,4 +1,12 @@
-/* === SIDEBAR === */ 
-.sidebar {  
-   z-index: 3;
+/* === SIDEBAR === */
+.sidebar {
+  z-index: 3;
+
+  &__social-links-list {
+    @include less-then-tablet {
+      display: none;
+    }
+
+    transform: rotate(-90deg) translateX(126px);
+  }
 }

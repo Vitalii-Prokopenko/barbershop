@@ -2,13 +2,7 @@
 .social-links {
   &__list {
     display: flex;
-    align-items: center;
-
-    @include less-then-tablet {
-      display: none;
-    }
-
-    transform: rotate(-90deg) translateX(126px);
+    align-items: center;        
 
     &::before {
       @extend %line;

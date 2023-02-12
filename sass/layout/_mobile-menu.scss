@@ -21,3 +21,114 @@
     fill: $accentColor;
   }
 }
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
+
+  padding: 118px 31px 118px 40px;
+  width: 337px;
+  height: 100vh;
+
+  outline: 1px solid crimson;
+  background-color: $baseBgColor;
+
+  transform: translateX(100%);
+  @include myTransition(transform);
+
+  &.is-open {
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__toggle {
+    position: absolute;
+    top: 48px;
+    right: 31px;
+
+    fill: $mainTextColor;
+  }
+
+  &__list {
+    margin-bottom: 64px;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  &__link {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: calc(25 / 18);
+    letter-spacing: 0.1em;
+
+    color: $mainTextColor;
+    @include myTransition(color);
+
+    &:hover,
+    &:focus {
+      color: $accentColor;
+    }
+  }
+
+  &__contact {
+    margin-bottom: 24px;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: calc(25 / 18);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: $mainTextColor;
+
+    &:hover,
+    &:focus {
+      color: $accentColor;
+    }
+  }
+
+  &__booking {
+    margin-bottom: auto;
+
+    color: $mainTextColor;
+
+    &:hover,
+    &:focus {
+      color: $mainLightTextColor;
+    }
+  }
+
+  &__social-links-wrap {
+    display: flex;
+    align-items: baseline;
+
+    &::before {
+      @extend %line;
+      margin-right: 40px;
+    }
+  }
+
+  &__social-links-list {
+    display: flex;
+    flex-direction: column;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  &__social-links-item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+}
