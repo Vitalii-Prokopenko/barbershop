@@ -2,7 +2,7 @@
 .social-links {
   &__list {
     display: flex;
-    align-items: center;        
+    align-items: center;
 
     &::before {
       @extend %line;

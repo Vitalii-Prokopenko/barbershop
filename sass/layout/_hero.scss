@@ -33,7 +33,7 @@
 
   &__subtitle {
     margin-bottom: 20px;
-    @extend %line-position;  
+    @extend %line-position;
 
     font-weight: 600;
     font-size: 11px;
@@ -47,12 +47,7 @@
     }
 
     &::before {
-      @extend %line;   
-      // margin-right: 20px;
-
-      // content: '';
-      // width: 60px;
-      // height: 1px;
+      @extend %line;
       background-color: rgba(157, 164, 189, 0.6);
     }
   }

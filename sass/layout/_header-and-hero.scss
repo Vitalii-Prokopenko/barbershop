@@ -21,10 +21,10 @@
       grid-template-columns: 70px 1070px;
       grid-template-rows: 48px 592px;
       column-gap: 30px;
-    }    
+    }
   }
 
-  &__sidebar {    
+  &__sidebar {
     @include tablet-and-desktop {
       grid-row: 1 / 3;
 
@@ -33,7 +33,7 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-    }    
+    }
   }
 
   &__header {
@@ -43,13 +43,13 @@
 
     @include only-tablet {
       justify-content: space-between;
-    }    
+    }
   }
 
   &__hero {
     @include less-then-tablet {
       grid-column: 1 / 3;
-    }    
+    }
   }
 
   &__slider-container {
@@ -72,7 +72,6 @@
       height: 680px;
     }
   }
-
 
   &__wrapper {
     position: absolute;

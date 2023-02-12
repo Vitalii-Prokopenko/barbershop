@@ -67,7 +67,7 @@
   &__subtitle {
     @extend %line-position;
     @extend %section-subtitle;
-        
+
     &::before {
       @extend %line;
     }

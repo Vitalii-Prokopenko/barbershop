@@ -32,7 +32,6 @@
   width: 337px;
   height: 100vh;
 
-  outline: 1px solid crimson;
   background-color: $baseBgColor;
 
   transform: translateX(100%);
@@ -44,7 +43,6 @@
 }
 
 .mobile-menu {
-  
   display: flex;
   flex-direction: column;
   justify-content: space-between;

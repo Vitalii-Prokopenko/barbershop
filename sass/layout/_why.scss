@@ -1,8 +1,6 @@
 /* === WHY === */
 .why {
-  
   &__container {
-   
     @include only-desktop {
       padding: 120px 215px;
       display: flex;

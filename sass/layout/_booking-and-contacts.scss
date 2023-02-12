@@ -1,29 +1,29 @@
 /* === BOOKING AND CONTACTS === */
 .booking-and-contacts {
   margin-bottom: 0;
-  background-color: $darkBgColor;    
+  background-color: $darkBgColor;
 
-&__container {
-display: flex;
+  &__container {
+    display: flex;
 
     @include mobile-and-tablet {
-        flex-direction: column;
+      flex-direction: column;
     }
 
-   @include only-desktop {
-    padding-right: 0;
-   }
-}    
- 
-&__booking {
-  @include only-desktop {
-    width: 600px;
+    @include only-desktop {
+      padding-right: 0;
+    }
   }
-}
 
-&__contacts {
-  @include only-desktop {
-    width: 785px;
+  &__booking {
+    @include only-desktop {
+      width: 600px;
+    }
   }
-}
+
+  &__contacts {
+    @include only-desktop {
+      width: 785px;
+    }
+  }
 }
