@@ -26,11 +26,11 @@ Used technologies:
 ### Lighthouse results
 
 ##### Desktop:
-+ Accessibility - 
-+ Best practices - 
-+ SEO - 
++ Accessibility - 96%
++ Best practices - 100%
++ SEO - 100%
 
 ##### Mobile:
-+ Accessibility - 
-+ Best practices - 
-+ SEO - 
++ Accessibility - 96%
++ Best practices - 83%
++ SEO - 100%
