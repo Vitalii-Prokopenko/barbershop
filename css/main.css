@@ -316,11 +316,11 @@ h6 {
     padding-left: 20px;
     padding-right: 20px;
     display: grid;
-    grid-template-columns: 333px 160px;
+    grid-template-columns: 338px 160px;
     grid-template-rows: 40px 16px;
-    -webkit-column-gap: 37px;
-       -moz-column-gap: 37px;
-            column-gap: 37px;
+    -webkit-column-gap: 32px;
+       -moz-column-gap: 32px;
+            column-gap: 32px;
     row-gap: 20px;
   }
 }
@@ -329,11 +329,11 @@ h6 {
     padding-left: 100px;
     padding-right: 20px;
     display: grid;
-    grid-template-columns: 375px 321px;
+    grid-template-columns: 380px 321px;
     grid-template-rows: 48px;
-    -webkit-column-gap: 254px;
-       -moz-column-gap: 254px;
-            column-gap: 254px;
+    -webkit-column-gap: 249px;
+       -moz-column-gap: 249px;
+            column-gap: 249px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1599px) {
